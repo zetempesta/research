@@ -1,0 +1,6 @@
+.form-group-contact {
+  max-height: 500px;
+  overflow: auto;
+
+  border-radius: 0.25rem;
+}
