@@ -1,0 +1,16 @@
+.auth-container-wrapper {
+  background: rgba(225, 206, 255, 0.45);
+  min-width: 70%;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+@media screen and (max-width: 1000px) {
+  .auth-container-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+}

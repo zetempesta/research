@@ -4,3 +4,6 @@
 
   border-radius: 0.25rem;
 }
+.react-select {
+  width: calc(100% - 42px) !important;
+}
