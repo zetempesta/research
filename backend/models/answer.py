@@ -8,7 +8,7 @@ conf = db_conf()
 
 def postAnswer(answer:ar)->bool:
     db = pg(conf.host, conf.database,conf.user, conf.port, conf.password)
-    
+    print(answer)
     sql = """UPDATE "public"."respondent" SET
     	        "dont_pickup" = """ + str(answer.dontAnswer) + """,
 	            "dont_accept" = """ + str(answer.dontTalk)  + """
@@ -20,7 +20,7 @@ def postAnswer(answer:ar)->bool:
     sql = """UPDATE "public"."contact" SET
                 name = '""" + str(answer.person.name) + """',
                 city = """ + str(answer.person.idCity) + """,
-                sex = 'A',
+                sex = '""" + str(answer.person.sex) + """',
 	            neighborhood = """ + str(answer.person.idNeighborhood) + """
             WHERE
                 id = """ + str(answer.person.idPerson)

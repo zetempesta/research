@@ -8,6 +8,8 @@ class person(BaseModel):
     name: str
     idCity:int
     idNeighborhood:Optional[int]
+    sex:Optional[str]
+    
 
 class question(BaseModel):
     idQuestion:int
