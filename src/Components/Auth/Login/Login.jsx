@@ -38,12 +38,12 @@ const Login = () => {
         <InputGroup className=" m-auto ">
           <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
           <Form.Control
-            placeholder="Username"
+            placeholder="Usuário"
             value={formData.username}
             onChange={(e) =>
               setFormData((prev) => ({ ...prev, username: e.target.value }))
             }
-            aria-label="Username"
+            aria-label="Usuário"
             aria-describedby="basic-addon1"
           />
         </InputGroup>
@@ -57,8 +57,8 @@ const Login = () => {
             onChange={(e) =>
               setFormData((prev) => ({ ...prev, password: e.target.value }))
             }
-            placeholder="Password"
-            aria-label="Password"
+            placeholder="Senha"
+            aria-label="Senha"
             aria-describedby="basic-addon1"
           />
         </InputGroup>
