@@ -129,7 +129,7 @@ const Contacts = ({ form, setForm }) => {
 
               setValues((prev) => ({ ...prev, neighbourhood: e }));
             }}
-            placeholder="Neighbourhood"
+            placeholder="Bairro"
           />
         </InputGroup>
         <InputGroup className="m-3  ">
@@ -156,13 +156,13 @@ const Contacts = ({ form, setForm }) => {
                 },
               }));
             }}
-            placeholder="Sex"
+            placeholder="Sexo"
           />
         </InputGroup>
       </div>
       <div className="d-flex m-3 flex-md-nowrap flex-wrap">
         <FormGroup className="flex-col border border-light rounded-1 text-center form-group-contact w-100 md-w-75">
-          <strong>Phone</strong>
+          <strong>Telefone</strong>
           {form?.person?.phones.map((phone, i) => (
             <Form.Control
               value={phone}
@@ -200,7 +200,7 @@ const Contacts = ({ form, setForm }) => {
                 setForm((prev) => ({ ...prev, dontTalk: e.target.checked }))
               }
             />
-            Did not answer the phone
+            Não atendeu
           </div>
           <div className="d-flex gap-1">
             <Form.Check
@@ -209,7 +209,7 @@ const Contacts = ({ form, setForm }) => {
                 setForm((prev) => ({ ...prev, dontAnswer: e.target.checked }))
               }
             />
-            Do not answer
+            Não quis responder
           </div>
         </div>
       </div>
