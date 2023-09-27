@@ -86,7 +86,7 @@ export const TabContainer = () => {
         >
           <Tab
             eventKey={`0`}
-            title="Contact"
+            title="Contato"
             className="border-warning-subtle bg-transparent"
           >
             <Contacts form={formData} setForm={setFormData} />
@@ -98,7 +98,7 @@ export const TabContainer = () => {
               title={
                 i === divideIntoThree(formData.questions).length - 1
                   ? "Final"
-                  : `Questions ${i + 1}`
+                  : `Questões ${i + 1}`
               }
               className="border-warning-subtle bg-transparent"
             >
@@ -153,8 +153,8 @@ export const TabContainer = () => {
           }}
         >
           {parseInt(activeKey) !== divideIntoThree(formData.questions).length
-            ? "Next"
-            : "Finish"}
+            ? "Próximo"
+            : "Finalizar"}
         </Button>
       </div>
     </div>

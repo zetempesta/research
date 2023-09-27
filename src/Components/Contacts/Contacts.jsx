@@ -140,12 +140,12 @@ const Contacts = ({ form, setForm }) => {
             className="react-select"
             aria-label="Default select example"
             value={[
-              { label: "Male", value: "male" },
-              { label: "Female", value: "female" },
+              { label: "Masculino", value: "male" },
+              { label: "Feminino", value: "female" },
             ].find((e) => e.value === form.person.sex)}
             options={[
-              { label: "Male", value: "male" },
-              { label: "Female", value: "female" },
+              { label: "Masculino", value: "male" },
+              { label: "Feminino", value: "female" },
             ]}
             onChange={(e) => {
               setForm((prev) => ({
