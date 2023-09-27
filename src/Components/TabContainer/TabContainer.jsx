@@ -141,7 +141,7 @@ export const TabContainer = () => {
                 await QuestionaireService.answer(answer);
                 setFormData((prev) => ({ ...prev, loading: true }));
                 await getResearch();
-                toast.success("Successfully Submitted");
+                toast.success("Enviado com sucesso");
                 return setActiveKey("0");
               } catch (error) {
                 toast.error(error.message);
