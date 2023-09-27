@@ -63,7 +63,7 @@ const Login = () => {
           />
         </InputGroup>
         <Button type="submit" variant="light" className="w-100">
-          Submit
+          Enviar
         </Button>
       </form>
       <div className="m-3 text-center">
