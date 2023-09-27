@@ -113,7 +113,7 @@ export const TabContainer = () => {
             variant="light"
             onClick={() => setActiveKey((prev) => String(parseFloat(prev) - 1))}
           >
-            Previous
+            Anterio
           </Button>
         ) : (
           <div></div>
