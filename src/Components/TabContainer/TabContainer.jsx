@@ -64,7 +64,7 @@ export const TabContainer = () => {
   }, []);
   if (formData.loading) {
     return (
-      <Spinner animation="border" role="status" variant="light">
+      <Spinner animation="border" role="status" style={{ color: "#28004e" }}>
         <span className="visually-hidden">Loading...</span>
       </Spinner>
     );
@@ -131,9 +131,9 @@ export const TabContainer = () => {
               type: e.type,
               response: e.response.length > 0 ? e.response : [""],
             }));
-            answer.person.idNeighborhood = !!answer.person.idNeighborhood
-              ? answer.person.idNeighborhood
-              : 0;
+            answer.person.idNeighborhood = answer.person.idNeighboor ?? 0;
+
+            delete answer.person.idNeighboor;
             if (
               parseInt(activeKey) === divideIntoThree(formData.questions).length
             ) {
