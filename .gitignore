@@ -1,6 +1,6 @@
 db_conf.py
-clientes.db
 app.ini
+clientes.db
 167.86.105.252-key.pem
 167.86.105.252.pem
 nohup.out
@@ -19,6 +19,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+dist
 dist-ssr
 *.local
 
